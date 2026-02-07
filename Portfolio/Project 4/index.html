@@ -25,7 +25,34 @@
                         <li><a href="#" class="nav__link">Login</a></li>
                         <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
                     </ul>
-                   
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fa brand fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                            <i class="fa brand fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a href="#landing" class="menu__link" onclick=closeMenu()>About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick=closeMenu()>Blog</a>
+                            </li>
+                            <li class="menu__list">
+                                <a href="#pricing" class="menu__link" onclick=closeMenu()>Pricing</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick=closeMenu()>Contact</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no-cursor" onclick=closeMenu()>Login</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link menu__link--primary no-cursor" onclick=closeMenu()>Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
